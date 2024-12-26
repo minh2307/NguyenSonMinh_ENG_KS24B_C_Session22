@@ -104,7 +104,6 @@ void editStudent(Student students[], int n) {
     char id[50];
     printf("Nhap ID sinh vien can sua: ");
     fgets(id, 50, stdin);
-    id[strcspn(id, "\n")] = 0;
 
     for (int i = 0; i < n; i++) {
         if (strcmp(students[i].id, id) == 0) {
